@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BPE Tokenizer Web App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>BPE Tokenizer + Embedding Generator</h1>
+
+  <form action="/process" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button type="submit">Upload & Process</button>
+  </form>
+
+  {% if output_file %}
+    <p><strong>Download Processed Output:</strong></p>
+    <a href="{{ url_for('download_file', filename=output_file) }}">{{ output_file }}</a>
+  {% endif %}
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Artificial intelligence is transforming the world.
+Machine learning enables systems to learn from data.
+Natural language processing helps computers understand human language.
+Deep learning models are at the core of many AI applications.
+Large language models like GPT can generate coherent and creative text.

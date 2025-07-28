@@ -1,0 +1,7 @@
+flask
+tokenizers
+gensim
+sentence-transformers
+numpy
+scikit-learn
+tqdm
